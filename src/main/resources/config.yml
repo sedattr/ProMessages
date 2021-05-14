@@ -1,0 +1,93 @@
+# _ _____ _____ _____ _____ _____ _____ _____ _
+#|_|_____|_____|_____|_____|_____|_____|_____|_|
+#| |          _____  _____   ____            | |
+#| |         |  __ \|  __ \ / __ \           | |
+#|_|         | |__) | |__) | |  | |          |_|
+#| |         |  ___/|  _  /| |  | |          | |
+#| |         | |    | | \ \| |__| |          | |
+#|_|         |_|    |_|  \_\\____/           |_|
+#| |                                         | |
+#| |     ProMessages | 2.0 | SedatTR#8666    | |
+#|_|_____ _____ _____ _____ _____ _____ _____|_|
+#|_|_____|_____|_____|_____|_____|_____|_____|_|
+#
+# If you have any question or suggestion please contact to me.
+# Discord: SedatTR#8666
+# Discord Server: https://discord.gg/nchk86TKMT
+
+messages:
+  usage:
+    - "&8- &a/promessages info: &7Shows plugin informations."
+    - "&8- &a/promessages reload: &7Reloads plugin."
+  noPermission: "&cYou don't have permission for using this command!"
+  reloaded: "&aPlugin successfully reloaded!"
+  info:
+    - "&aJoin Message: &7%join_message%"
+    - "&aLeave Message: &7%leave_message%"
+    - "&aPlayer Message: &7%player_message%"
+    - "&r"
+    - "&aJoin Sound: &7%join_sound%"
+    - "&aPlayers Sound: &7%players_sound%"
+    - "&r"
+    - "&aTitle: &7%title%"
+    - "&aAction Bar: &7%action_bar%"
+
+settings:
+  permissions:
+    command: "promessages.command"
+    reload: "promessages.reload"
+
+  # You can use RGB colors in all messages. (Usage: #COLOR like #FF0000Hello #00FF00%player%!)
+  # You can use PlaceholderAPI or normal placeholders in every message.
+  # Normal Placeholders:
+  # %name%, %displayname%, %ping%, %deaths%, %health%, %hunger%, %xp%, %world%, %location_x%, %location_y%, %location_z%, %online%
+
+  # Title will sent to player when he join.
+  # Set "" to disable title or subtitle.
+  title:
+    enabled: true
+    title: "&eWelcome to server!"
+    subtitle: "&f%player%"
+
+    # Seconds
+    fadeIn: 2
+    stay: 10
+    fadeOut: 2
+
+  # Action Bar will sent to player when he join.
+  # Set "" to disable.
+  actionBar: "&aWelcome back!"
+
+  # Join, Leave messages.
+  # You can set "" to disable join or leave messages.
+  firstJoin: "&8[&a+&8] &f%player% &7has joined the server for first time!"
+  join: "&8[&a+&8] &f%player% &7has joined the server."
+  leave: "&8[&c-&8] &f%player% &7has left the server."
+
+  # Player messages will sent to player when he join.
+  # You can add unlimited lines.
+  # You can use %center% for centering some messages.
+  player:
+    enabled: true
+    delay: 3 # This setting is for delay, write in seconds.
+    firstJoin:
+      - "&aWelcome to server for first time!"
+    join:
+      - "&aName: &7%player%"
+      - "&aHealth: &7%health%"
+      - "&aHunger: &7%hunger%"
+      - "&aOnline Players: &7%online%"
+
+  # You can disable sounds with changing enabled setting to false.
+  # Sound List: https://www.spigotmc.org/wiki/cc-sounds-list/
+  sound:
+    join: # This sound will sent to player when he join.
+      enabled: false
+      value: ORB_PICKUP
+      volume: 1
+      pitch: 1
+    players: # This sound will sent to all players when someone join & leave.
+      enabled: false
+      value: ORB_PICKUP
+      volume: 1
+      pitch: 1

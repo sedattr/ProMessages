@@ -1,0 +1,12 @@
+main: me.sedattr.messages.ProMessages
+version: 2.5
+name: ProMessages
+author: SedatTR
+description: The best & cheap join, leave, player messages plugin.
+website: https://discord.gg/nchk86TKMT
+
+commands:
+  promessages:
+    aliases:
+      - promessage
+    description: Default messages command.
